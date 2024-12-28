@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relaxation Games</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Games</a>
+        <a href="resources.html">Resources</a>
+      </nav>
+  <header>
+    <h1>Relaxation Games</h1>
+    <p>Enjoy calming activities to relax your mind and body.</p>
+  </header>
+
+  <main>
+    <!-- Breathing Exercise Section -->
+    <section id="breathing-section">
+      <h2>Breathing Exercise</h2>
+      <div class="instructions">
+        <p id="breathing-instructions">Click "Start Exercise" to begin.</p>
+      </div>
+      <div id="breathing-game">
+        <div id="circle"></div>
+      </div>
+      <div class="buttons">
+        <button onclick="startBreathing()">Start Exercise</button>
+        <button onclick="stopBreathing()">Stop Exercise</button>
+      </div>
+    </section>
+
+    <!-- Memory Card Game Section -->
+    <section id="memory-game-section">
+      <h2>Memory Card Game</h2>
+      <p>Flip the cards to find matching pairs. Try to complete the game in the fewest moves!</p>
+      <div class="memory-game-grid">
+        <!-- Cards will be dynamically created using JavaScript -->
+      </div>
+      <div class="game-info">
+        <p id="moves-counter">Moves: 0</p>
+        <button onclick="resetGame()">Reset Game</button>
+      </div>
+      <p id="completion-message" style="display: none;">🎉 Congratulations! You completed the game! 🎉</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>These games are for relaxation purposes only and are not a substitute for professional mental health support.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
