@@ -114,7 +114,7 @@ body {
     transform: scale(1); /* Default size - inhale phase */
   }
   50% {
-    transform: scale(2); /* Expanded size - end of inhale */
+    transform: scale(3); /* Expanded size - end of inhale */
   }
   90%, 100% {
     transform: scale(1); /* Contract to default size - exhale phase */
