@@ -28,20 +28,19 @@ body {
     gap: 40px;
     align-items: center;
   }
-
-@keyframes breathing {
-  0%, 100% {
-    transform: scale(1);
+  
+  @keyframes breathing {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
   }
-  50% {
-    transform: scale(1.5);
+  
+  #circle {
+    animation: none; /* Default */
   }
-}
-
-#circle {
-  animation: none; /* Default */
-}
-
   
   /* Navigation Bar */
   nav {
