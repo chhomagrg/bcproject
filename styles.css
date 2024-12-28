@@ -7,15 +7,14 @@ body {
     color: #333;
   }
   
-  header {
+  header, footer {
     text-align: center;
+    padding: 20px;
     background-color: #6c9ae2;
     color: white;
-    padding: 20px;
   }
   
   footer {
-    text-align: center;
     padding: 10px;
     background-color: #f1f1f1;
     color: #555;
@@ -31,24 +30,35 @@ body {
   
   /* Navigation Bar */
   nav {
-    background-color: #186cd3; 
+    background-color: #186cd3;
     padding: 10px 20px;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
   }
   
   nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px; 
+    margin-left: 20px;
     font-size: 1rem;
     font-weight: bold;
   }
   
   nav a:hover {
-    text-decoration: underline; 
-    color: #aed1f8; 
+    text-decoration: underline;
+    color: #aed1f8;
+  }
+  
+  /* Common Section Layout */
+  .section {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   /* Breathing Exercise Section */
@@ -57,13 +67,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .instructions {
@@ -81,11 +84,10 @@ body {
   }
   
   #circle {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background-color: lightblue;
     border-radius: 50%;
-    animation: none; /* Default */
   }
   
   .buttons {
@@ -110,27 +112,15 @@ body {
   
   /* Breathing Animation */
   @keyframes breathing {
-  0%, 40% {
-    transform: scale(1); /* Default size - inhale phase */
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(3); /* Adjust scale for larger growth */
+    }
   }
-  50% {
-    transform: scale(4); /* Expanded size - end of inhale */
-  }
-  90%, 100% {
-    transform: scale(1); /* Contract to default size - exhale phase */
-  }
-}
   
   /* Memory Card Game Section */
-  #memory-game-section {
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
   
   .memory-game-grid {
     display: grid;
@@ -174,7 +164,7 @@ body {
   /* Articles Section */
   #articles {
     margin-top: 40px;
-    text-align: left; 
+    text-align: left;
   }
   
   #articles h2 {
