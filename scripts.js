@@ -9,7 +9,7 @@ function startBreathing() {
   instructions.innerHTML = "Breathe in as the circle expands... Breathe out as it contracts.";
 
   const circle = document.getElementById('circle');
-  circle.style.animation = "breathing 4s infinite";
+  circle.style.animation = "breathing 10s infinite";
 
   setTimeout(() => {
     if (isBreathing) {
