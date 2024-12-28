@@ -29,19 +29,6 @@ body {
     align-items: center;
   }
   
-  @keyframes breathing {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-  }
-  
-  #circle {
-    animation: none; /* Default */
-  }
-  
   /* Navigation Bar */
   nav {
     background-color: #186cd3; 
@@ -98,7 +85,7 @@ body {
     height: 50px;
     background-color: lightblue;
     border-radius: 50%;
-    animation: none; /* Default: no animation */
+    animation: none; /* Default */
   }
   
   .buttons {
@@ -119,6 +106,16 @@ body {
   
   .buttons button:hover {
     background-color: #5689d0;
+  }
+  
+  /* Breathing Animation */
+  @keyframes breathing {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(3); /* Adjust scale for larger growth */
+    }
   }
   
   /* Memory Card Game Section */
