@@ -110,13 +110,16 @@ body {
   
   /* Breathing Animation */
   @keyframes breathing {
-    0%, 100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(3); /* Adjust scale for larger growth */
-    }
+  0%, 40% {
+    transform: scale(1); /* Default size - inhale phase */
   }
+  50% {
+    transform: scale(2); /* Expanded size - end of inhale */
+  }
+  90%, 100% {
+    transform: scale(1); /* Contract to default size - exhale phase */
+  }
+}
   
   /* Memory Card Game Section */
   #memory-game-section {
